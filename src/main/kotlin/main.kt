@@ -46,13 +46,19 @@ class Constants private constructor(){
 //mamire - animal
 
 abstract class Mamifero ( var nome: String){
+
+    var peso = 0f
     abstract fun falar()
     open fun dormir(){
         println("Estou dormindo")
     }
 }
 
-class Cachorro (nome: String):Mamifero(nome){
+class Cachorro (nome: String, meuPeso: Float):Mamifero(nome){
+
+    init {
+        this.peso = meuPeso
+    }
     override fun falar() {
         println("au au porra")
     }
@@ -72,7 +78,7 @@ class Animal (nome: String):Mamifero(nome){
 
 fun main() {
 
-    Cachorro("Bolt").dormir()
+    Cachorro("Bolt", 10f).dormir()
 
 
 
