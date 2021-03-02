@@ -43,8 +43,8 @@ class Constants private constructor(){
 
  */
 
-//mamire - animal
-
+//mamifero - animal
+/*
 abstract class Mamifero ( var nome: String){
 
     var peso = 0f
@@ -76,11 +76,52 @@ class Animal (nome: String):Mamifero(nome){
 
 }
 
+
+ */
+interface Maquina{
+
+    fun ligar()
+    fun desligar(){
+        println("desligado")
+    }
+}
+class Computador: Maquina{
+    override fun ligar() {
+
+    }
+
+
+}
+
+interface interface1{
+    fun ola(){
+        println("INTERFACE1")
+    }
+}
+
+interface interface2{
+    fun ola(){
+        println("INTERFACE2")
+    }
+}
+class implementaInterface():interface1,interface2{
+    override fun ola() {
+        super<interface1>.ola()
+
+    }
+
+
+}
+
 fun main() {
 
+
+/*
     Cachorro("Bolt", 10f).dormir()
 
 
+
+ */
 
     /*
     println(Constants.TABLE)
