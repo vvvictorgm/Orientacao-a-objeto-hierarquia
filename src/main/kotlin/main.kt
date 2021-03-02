@@ -18,6 +18,8 @@ class Computador(marca: String, val nucleos: Int) : Maquina(marca) {
 }
 
  */
+
+/*
 class Constants private constructor(){
 
     companion object{
@@ -39,11 +41,35 @@ class Constants private constructor(){
 
 }
 
+ */
+
+//mamire - animal
+
+abstract class Mamifero ( var nome: String){
+    abstract fun falar()
+}
+
+class Cachorro (nome: String):Mamifero(nome){
+    override fun falar() {
+        println("au au porra")
+    }
+
+}
+
+
+}
+
 fun main() {
+
+
+
+    /*
     println(Constants.TABLE)
     Constants.teste()
     Constants.VENDAS.COLUNAS.ID
 
+
+     */
 
 /*
 val c:Computador = Computador("xpto", 8)
