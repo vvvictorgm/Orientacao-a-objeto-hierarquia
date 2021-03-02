@@ -10,6 +10,10 @@ class Computador(marca: String, val nucleos: Int) : Maquina(marca) {
     }
     fun ligar(){}
     fun processar(){}
+
+    fun overloard(i: Int) = println("Overload")
+    fun overloard(i: Int, b:Int) = println("Overload")
+    fun overloard(i: Int, b:Int, java : String) = println("Overload")
 }
 
 fun main() {
