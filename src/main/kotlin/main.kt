@@ -78,6 +78,7 @@ class Animal (nome: String):Mamifero(nome){
 
 
  */
+/*
 interface Maquina{
 
     fun ligar()
@@ -112,8 +113,18 @@ class implementaInterface():interface1,interface2{
 
 
 }
+ */
+class Pessoa{
+    lateinit var nome:String
 
+    fun geradorDeNome(){
+        nome ="Vcitor"
+    }
+}
 fun main() {
+
+    val p = Pessoa()
+    p.geradorDeNome()
 
 
 /*
