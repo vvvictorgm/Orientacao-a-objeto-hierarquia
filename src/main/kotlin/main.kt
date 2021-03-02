@@ -18,13 +18,21 @@ class Computador(marca: String, val nucleos: Int) : Maquina(marca) {
 }
 
  */
-class Constants(){
+class Constants private constructor(){
 
     companion object{
         val TABLE = "Pessoa"
 
         fun teste(){
             println("sou um metodo estático")
+        }
+    }
+    object VENDAS{
+        val TABLE_NAME = "Vendas"
+
+        object COLUNAS{
+            val ID ="ID"
+            val TOTAL = "TOTAL"
         }
     }
 
@@ -34,6 +42,8 @@ class Constants(){
 fun main() {
     println(Constants.TABLE)
     Constants.teste()
+    Constants.VENDAS.COLUNAS.ID
+
 
 /*
 val c:Computador = Computador("xpto", 8)
