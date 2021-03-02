@@ -47,6 +47,9 @@ class Constants private constructor(){
 
 abstract class Mamifero ( var nome: String){
     abstract fun falar()
+    open fun dormir(){
+        println("Estou dormindo")
+    }
 }
 
 class Cachorro (nome: String):Mamifero(nome){
@@ -56,10 +59,20 @@ class Cachorro (nome: String):Mamifero(nome){
 
 }
 
+class Animal (nome: String):Mamifero(nome){
+    override fun falar() {
+        println("miau porra")
+    }
+
+    override fun dormir() {
+        println("dormir por 15 horas")
+    }
 
 }
 
 fun main() {
+
+    Cachorro("Bolt").dormir()
 
 
 
