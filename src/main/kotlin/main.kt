@@ -1,11 +1,13 @@
 open class Maquina(val marca: String) {
-    fun minhaMarca() {
+    open fun minhaMarca() {
         println("Minha marca é $marca")
     }
 }
 
 class Computador(marca: String, val nucleos: Int) : Maquina(marca) {
-
+    override fun minhaMarca() {
+        "estou reencreendo minhaMarca"
+    }
     fun ligar(){}
     fun processar(){}
 }
